@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Exchange.WebServices.Data;
 using Microsoft.Identity.Client;
 
-//dotnet build 
-//dotnet run -- "47385850-adf4-4a42-9d57-87528c1223fe" "Va38Q~clNwkOraFCnCHpWpmyoxSaK6uucpSzScTJ" "11bbefd4-0c6d-4f57-b665-8595ef75b628"
+
 
 namespace EWSConsoleApp3
 {
@@ -21,7 +20,7 @@ internal class Program
 //should add code Test if input arguments were supplied.
         
             // args must alwasy be AzureApp Client - ID Secrete TenantId
-            // ex: program.exe "47385850-adf4-4a42-9d57-87528c1223fe" "Va38Q~clNwkOraFCnCHpWpmyoxSaK6uucpSzScTJ" "11bbefd4-0c6d-4f57-b665-8595ef75b628"
+            
             // args[0]
        
 
