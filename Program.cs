@@ -45,10 +45,10 @@ internal class Program
                 ewsClient.Url = new Uri("https://outlook.office365.com/EWS/Exchange.asmx");
                 ewsClient.Credentials = new OAuthCredentials(authResult.AccessToken);
                 ewsClient.ImpersonatedUserId =
-                    new ImpersonatedUserId(ConnectingIdType.SmtpAddress, "LynneR@tw26j.onmicrosoft.com");
+                    new ImpersonatedUserId(ConnectingIdType.SmtpAddress, args[3]);
 
                 //Include x-anchormailbox header
-                ewsClient.HttpHeaders.Add("X-AnchorMailbox", "LynneR@tw26j.onmicrosoft.com");
+                ewsClient.HttpHeaders.Add("X-AnchorMailbox", args[3]);
 
                // https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-work-with-folders-by-using-ews-in-exchange
                 // Create a new folder view, and pass in the maximum number of folders to return.
